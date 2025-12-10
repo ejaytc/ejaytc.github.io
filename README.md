@@ -19,7 +19,7 @@ This is a space to **learn, build, solve, and grow step by step**—one project 
 ## Developer Journal
 
 * [Setup Notes]()
-  * [honkit Setup](_book/honkit/honkit_setup.md)
+  * [honkit Setup](/honkit/honkit.md)
  
 * [Project Logs]()
   * Odoo (Todo)

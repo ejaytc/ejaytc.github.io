@@ -6,7 +6,7 @@
 ## Developer Chapter
 
 * [Setup Notes]()
-  * [honkit Setup](honkit/honkit.md)
+  * [honkit Setup](/honkit/honkit.md)
 * [Project Logs]()
   * Odoo (Todo)
   * Django (Todo)
@@ -17,4 +17,4 @@
   * Todo
 * [Tips & Tricks]()
   * Todo
-* [Abount](static/abount.md)
+* [Abount](/static/abount.md)

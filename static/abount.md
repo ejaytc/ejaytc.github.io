@@ -3,7 +3,7 @@
 This page contains an embedded interactive demonstration built with Flutter.
 
 <iframe 
-  src="about/about.html" 
+  src="/static/about/about.html" 
   title="My Flutter Application Demo"
   width="100%" 
   height="600px" 
