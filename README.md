@@ -32,4 +32,4 @@ This is a space to **learn, build, solve, and grow step by step**—one project 
   * Todo
 * [Tips & Tricks]()
   * Todo
-* [Abount](/static/abount.md)
+* [About](/static/about.md)

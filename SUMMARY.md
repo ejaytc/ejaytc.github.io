@@ -17,4 +17,4 @@
   * Todo
 * [Tips & Tricks]()
   * Todo
-* [Abount](/static/abount.md)
+* [About](/static/about.md)
