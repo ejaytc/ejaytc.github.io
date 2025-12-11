@@ -3,7 +3,7 @@
 <html lang="" >
     <head>
         <meta charset="UTF-8">
-        <title>About · HonKit</title>
+        <title>Doodba Setup · HonKit</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="HonKit 6.1.4">
@@ -11,24 +11,24 @@
         
         
     
-    <link rel="stylesheet" href="../gitbook/style.css">
+    <link rel="stylesheet" href="../../gitbook/style.css">
 
     
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-highlight/website.css">
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-highlight/website.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
+                <link rel="stylesheet" href="../../gitbook/@honkit/honkit-plugin-fontsettings/website.css">
                 
             
         
@@ -56,10 +56,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="../docker_notes/terminal_command.html" />
+    
+    
+    <link rel="prev" href="../honkit/honkit.html" />
     
 
     </head>
@@ -88,9 +92,9 @@
         
         
     
-        <li class="chapter " data-level="1.1" data-path="../">
+        <li class="chapter " data-level="1.1" data-path="../../">
             
-                <a href="../">
+                <a href="../../">
             
                     
                     Introduction
@@ -108,9 +112,9 @@
         
         
     
-        <li class="chapter " data-level="2.1" data-path="../setup_notes/readme.html">
+        <li class="chapter " data-level="2.1" data-path="../readme.html">
             
-                <a href="../setup_notes/readme.html">
+                <a href="../readme.html">
             
                     
                     Setup Notes
@@ -122,9 +126,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.1.1" data-path="../setup_notes/honkit/honkit.html">
+        <li class="chapter " data-level="2.1.1" data-path="../honkit/honkit.html">
             
-                <a href="../setup_notes/honkit/honkit.html">
+                <a href="../honkit/honkit.html">
             
                     
                     Honkit Setup
@@ -135,9 +139,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.2" data-path="../setup_notes/doodba/doodba.html">
+        <li class="chapter active" data-level="2.1.2" data-path="doodba.html">
             
-                <a href="../setup_notes/doodba/doodba.html">
+                <a href="doodba.html">
             
                     
                     Doodba Setup
@@ -148,9 +152,9 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.3" data-path="../setup_notes/docker_notes/terminal_command.html">
+        <li class="chapter " data-level="2.1.3" data-path="../docker_notes/terminal_command.html">
             
-                <a href="../setup_notes/docker_notes/terminal_command.html">
+                <a href="../docker_notes/terminal_command.html">
             
                     
                     Docker (Odoo)
@@ -301,9 +305,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.5" data-path="about.html">
+        <li class="chapter " data-level="2.5" data-path="../../static/about.html">
             
-                <a href="about.html">
+                <a href="../../static/about.html">
             
                     
                     About
@@ -344,7 +348,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >About</a>
+        <a href="../.." >Doodba Setup</a>
     </h1>
 </div>
 
@@ -359,13 +363,71 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="my-awesome-flutter-app">My Awesome Flutter App</h1>
-<p>This page contains an embedded interactive demonstration built with Flutter.</p>
-<iframe src="/static/about/about.html" title="My Flutter Application Demo" width="100%" height="600px" style="border: none; background-color: white;">
-</iframe>
+                                <h1 id="doodba-setup-guide-linux">Doodba Setup Guide (Linux)</h1>
+<h1 id="note">NOTE:</h1>
+<ul>
+<li>Don't use Ubuntu 23 if your going to use it as work space for doodba.</li>
+<li>Python 3 &lt; Python 3.10.12 is a must. I encountered some errors while using python 3.11 and up.</li>
+</ul>
+<h2 id="initial-setup">Initial Setup</h2>
+<ul>
+<li>this step need do without python  virtual environment or conda, if it is activated you should disabled it: some commands that can deactivate:<pre><code>conda deactivate
+sourse deactivate
+deactivate
+</code></pre></li>
+<li>Download or clone  <a href="https://github.com/Tecnativa/doodba" target="_blank">Doodba</a>   </li>
+<li>Setup docker <a href="https://docs.docker.com/engine/install/ubuntu/" target="_blank">Docker</a></li>
+<li>Use docker without <a href="https://docs.docker.com/engine/install/linux-postinstall/" target="_blank">sudo</a> </li>
+<li>Template <a href="https://github.com/Tecnativa/doodba-copier-template" target="_blank">copier</a> </li>
+</ul>
+<h2 id="setup-with-python-venv">Setup with Python Venv</h2>
+<ul>
+<li>First check your python version</li>
+<li>check if pip is installed by running pip --version</li>
+<li>If pip is not installed run this command: sudo apt install python3-pip</li>
+<li>When running python3 -m venv .venv it will create .venv folder but this one doesn't have the activate , It will say the you need to run some command to install python virtual environment. for example for me it say the I need to run the sudo apt install python3.10-venv</li>
+<li>After the installation, delete the  .venv  you created then cd  to doodba folder and execute the command python3 -m venv .venv </li>
+<li>Activate the .venv / virtual environment by executing the source .venv/bin/activate or . .venv/bin/activate </li>
+<li>Then Execute all the commands one by one below:</li>
+</ul>
+<pre><code>python3 -m venv .venv
+source .venv/bin/activate
+pip install PyYAML==6.0.2
+pip install copier==9.7.1
+pip install invoke
+pip install pre-commit
+pip install docker-compose
 
-<p>Feel free to interact with the component above!</p>
+# duplicity dependencies
+pip install setuptools_scm
+pip install google-api-python-client
+pip install google-auth-oauthlib
+</code></pre><ul>
+<li>non-python dependencies for duplicity</li>
+</ul>
+<pre><code>sudo apt install gettext
+sudo apt install librsync-dev
 
+# After the commands above install the duplicity
+pip install -e git+ssh://git@github.com/baracodadailyhealthtech/duplicity.git@gdrive#egg=duplicity
+</code></pre><h2 id="use-the-template-to-generate-your-subproject">Use the template to generate your subproject</h2>
+<p>Once you installed everything, you can now use Copier to copy this template:</p>
+<pre><code class="lang-bash">copier copy gh:Tecnativa/doodba-copier-template ~/path/to/your/subproject
+</code></pre>
+<h2 id="get-workspace">GET WORKSPACE</h2>
+<ul>
+<li>This is for VSCode user.</li>
+<li>Open terminal and execute the command:  invoke write-code-workspace-file </li>
+</ul>
+<h2 id="setup-doodba">Setup Doodba</h2>
+<ul>
+<li>Request for Docker Hub credentials since it needed for the setup of doodba.</li>
+<li>When done with the credential.  Move the db from backup to doodba folder. then rename it to DB.sql </li>
+<li>Move the filestore to doodba folder.</li>
+<li>Then execute the command below:</li>
+</ul>
+<pre><code>invoke img-pull img-build --pull git-aggregate resetdb start
+</code></pre>
                                 
                                 </section>
                             
@@ -392,6 +454,14 @@
 
             
                 
+                <a href="../honkit/honkit.html" class="navigation navigation-prev " aria-label="Previous page: Honkit Setup">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../docker_notes/terminal_command.html" class="navigation navigation-next " aria-label="Next page: Docker (Odoo)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -400,7 +470,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"About","level":"2.5","depth":1,"previous":{"title":"Todo","level":"2.4.1","depth":2,"ref":"","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu","insert-logo","livereload"],"pluginsConfig":{"insert-logo":{"url":"/assets/images/logo.jpg","style":"background: none;max-width: 200px;"},"collapsible-menu":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"static/about.md","mtime":"2025-12-10T17:55:38.627Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-12-11T13:38:55.628Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Doodba Setup","level":"2.1.2","depth":2,"next":{"title":"Docker (Odoo)","level":"2.1.3","depth":2,"path":"setup_notes/docker_notes/terminal_command.md","ref":"setup_notes/docker_notes/terminal_command.md","articles":[]},"previous":{"title":"Honkit Setup","level":"2.1.1","depth":2,"path":"setup_notes/honkit/honkit.md","ref":"setup_notes/honkit/honkit.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["collapsible-menu","insert-logo","livereload"],"pluginsConfig":{"insert-logo":{"url":"/assets/images/logo.jpg","style":"background: none;max-width: 200px;"},"collapsible-menu":{},"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"setup_notes/doodba/doodba.md","mtime":"2025-12-11T13:09:15.238Z","type":"markdown"},"gitbook":{"version":"6.1.4","time":"2025-12-11T13:38:55.628Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
@@ -450,39 +520,39 @@
             book.classList.remove("honkit-cloak");
         }
     </script>
-    <script src="../gitbook/gitbook.js"></script>
-    <script src="../gitbook/theme.js"></script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
     
         
-        <script src="../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
         
     
         
-        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
         
     
         
-        <script src="../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/@honkit/honkit-plugin-fontsettings/fontsettings.js"></script>
         
     
 

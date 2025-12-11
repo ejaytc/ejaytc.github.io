@@ -1,0 +1,10 @@
+{
+    "plugins": ["collapsible-menu","insert-logo"],
+    "pluginsConfig": {
+        "insert-logo": {
+          "url": "/assets/images/logo.jpg",
+          "style": "background: none;max-width: 200px;"
+        }
+    }
+}
+  
