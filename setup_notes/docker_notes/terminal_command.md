@@ -153,7 +153,7 @@ services:
     image: odoo:14.0
     depends_on:
       - db
-    # command: odoo -d uhh13 -u all
+    # command: odoo -d database -u all
     restart: unless-stopped
     ports:
       - "8014:8069"
