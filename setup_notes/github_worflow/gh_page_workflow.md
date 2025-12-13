@@ -1,4 +1,4 @@
-# Simple worflow for github page using honkit.
+# Simple workflow for github page using honkit.
 
 1. Add **.github/worflows/filename.yml or filename.yaml"
 ```bash
