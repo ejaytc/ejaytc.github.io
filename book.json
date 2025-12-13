@@ -1,5 +1,11 @@
 {
-    "plugins": ["collapsible-menu","insert-logo"],
+    "plugins": [
+      "-lunr", 
+      "-search",
+      "search-plus", 
+      "collapsible-menu",
+      "insert-logo"
+    ],
     "pluginsConfig": {
         "insert-logo": {
           "url": "/assets/images/logo.jpg",

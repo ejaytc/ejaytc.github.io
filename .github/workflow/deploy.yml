@@ -1,0 +1,35 @@
+name: Build & Deploy HonKit
+
+on:
+  push:
+    branches: [ master ]  # or your main branch name
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checkout repo
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 25
+
+      # Install dependencies
+      - name: Install npm dependencies
+        run: npm ci
+
+      # Build HonKit book
+      - name: Build book
+        run: npm run build
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-page@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_book
