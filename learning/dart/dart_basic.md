@@ -1,4 +1,4 @@
-Here’s your **Dart basic syntax** neatly formatted in **Markdown** for easy reference:
+**Dart basic syntax** 
 
 ````markdown
 # Dart Basic Syntax
@@ -307,12 +307,3 @@ Line 2
 ```
 
 * **Raw Strings:** `r"This is raw \n no newline"`
-
-```
-
----
-
-If you want, I can also make an **even more compact “one-page cheat sheet”** for Dart that fits all essentials in a few sections for quick reference while coding.  
-
-Do you want me to do that?
-```
