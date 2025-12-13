@@ -7,6 +7,6 @@ The ESP32 acts as an access point. The ESP32 hosts a simple webpage that is a co
 
 [My Entry](https://manila.makerfaire.com/maker/entry/37/)
 
-I link above not working use the link below
+If link above not working use the link below
 
-[Maker Faire](/project_logs/maker_faire/manila_maker_faire.html)
+<a href="custom-html/example.html" target="_blank">Maker Faire</a>
