@@ -9,4 +9,4 @@ The ESP32 acts as an access point. The ESP32 hosts a simple webpage that is a co
 
 If link above not working use the link below
 
-<a href="custom-html/example.html" target="_blank">Maker Faire</a>
+<a href="/project_logs/maker_faire/manila_maker_faire.html" target="_blank">Maker Faire</a>
