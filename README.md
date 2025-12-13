@@ -19,8 +19,10 @@ This is a space to **learn, build, solve, and grow step by step**—one project 
 ## Developer Journal
 
 * [Project Logs](/project_logs/readme.md)
+  * [Github Page](/project_logs/github_page/github_page.md)
 * [Setup Notes](/setup_notes/readme.md)
   * [Honkit Setup](/setup_notes/honkit/honkit.md)
+  * [Honkit Workflow](/setup_notes/github_worflow/gh_page_workflow.md)
   * [Doodba Setup](/setup_notes/doodba/doodba.md)
   * [Docker (Odoo)](/setup_notes/docker_notes/terminal_command.md)
 * [Learning](/learning/readme.md)
