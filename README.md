@@ -24,14 +24,3 @@ This is a space to **learn, build, solve, and grow step by step**—one project 
   * [Docker (Odoo)](/setup_notes/docker_notes/terminal_command.md)
 * [Learning](/learning/readme.md)
   * [Dart Basic](/learning/dart/dart_basic.md)
-<!-- * [Project Logs]()
-  * Odoo (Todo)
-  * Django (Todo)
-  * Chip-8 (Todo)
-* [Solution & References]()
-  * Todo
-* [Lessons Learned]()
-  * Todo
-* [Tips & Tricks]()
-  * Todo
-* [About](/static/about.md) -->
