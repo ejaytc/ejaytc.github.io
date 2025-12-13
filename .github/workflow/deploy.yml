@@ -3,6 +3,7 @@ name: Build & Deploy HonKit
 on:
   push:
     branches: [ master ]  # or your main branch name
+  workflow_dispatch:
 
 jobs:
   build:
