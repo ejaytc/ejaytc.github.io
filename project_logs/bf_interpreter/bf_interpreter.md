@@ -1,5 +1,4 @@
-# Try the Brainfuck Interpreter
-    - Ported from python source.
+# Brainfuck Interpreter
 
 Use the interactive terminal below to test your code:
 
@@ -11,7 +10,9 @@ Use the interactive terminal below to test your code:
   allow="clipboard-read; clipboard-write">
 </iframe>
 
-* [Flutter/Dart Source Cod](https://github.com/ejaytc/brainfuck_interpreter_flutter_dart/tree/main)
+* [Flutter/Dart Source Code](https://github.com/ejaytc/brainfuck_interpreter_flutter_dart/tree/main)
+* [Python Source Terminal Base](https://github.com/ejaytc/Brainfuck-Interpreter-Python3)
+* Sample Brainfuck script
     - Simple Hello World!
     ```
     ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
@@ -23,5 +24,3 @@ Use the interactive terminal below to test your code:
 <<<<<<<<<<<<<<<<-]
 
     ```
-* [Python Sourc Terminal Base](https://github.com/ejaytc/Brainfuck-Interpreter-Python3)
-    - Currently not yet complete
