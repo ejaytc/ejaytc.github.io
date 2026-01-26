@@ -3,3 +3,4 @@
 * [Github Page](/project_logs/github_page/github_page.md)
 * [Controlling appliances using ESP32](/project_logs/maker_faire/controlling_appliances_using_esp32.md)
 * [BrainFuck Interpreter](/project_logs/bf_interpreter/bf_interpreter.md)
+* [Odoo Module Projects](/project_logs//odoo_projects/odoo_project.md)
