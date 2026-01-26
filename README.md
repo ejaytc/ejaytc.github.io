@@ -21,6 +21,8 @@ This is a space to **learn, build, solve, and grow step by step**—one project 
 * [Project Logs](/project_logs/readme.md)
   * [Github Page](/project_logs/github_page/github_page.md)
   * [Controlling appliances using ESP32](/project_logs/maker_faire/controlling_appliances_using_esp32.md)
+  * [Brainfuck Intepreter](/project_logs/bf_interpreter/bf_interpreter.md)
+  * [Odoo Projects](/project_logs/odoo_projects/odoo_project.md)
 * [Setup Notes](/setup_notes/readme.md)
   * [Honkit Setup](/setup_notes/honkit/honkit.md)
   * [Honkit Workflow](/setup_notes/github_worflow/gh_page_workflow.md)
